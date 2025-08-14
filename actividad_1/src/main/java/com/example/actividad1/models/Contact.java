@@ -1,33 +1,48 @@
 package com.example.actividad1.models;
 
 public class Contact {
+    private int id;
     private String name;
-    private String direccion;
-    private int numero;
+    private String direction;
+    private String number;
 
-    public Contact(String name, String direccion, int numero) {
+    public Contact(int id, String name, String direction, String number) {
+        this.id = id;
         this.name = name;
-        this.direccion = direccion;
-        this.numero = numero;
+        this.direction = direction;
+        this.number = number;
     }
 
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
-    public String getDireccion() {
-        return direccion;
+
+    public String getdirection() {
+        return direction;
     }
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+
+    public void setdirection(String direction) {
+        this.direction = direction;
     }
-    public int getNumero() {
-        return numero;
+
+    public String getnumber() {
+        return number;
     }
-    public void setNumero(int numero) {
-        this.numero = numero;
+
+    public void setnumber(String number) {
+        this.number = number;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
 }
