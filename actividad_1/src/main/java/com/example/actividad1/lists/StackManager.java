@@ -18,7 +18,6 @@ public class StackManager {
         this.pila = pila;
     }
 
-
     /**
      * Funcion que se encarga de agregar un numero a la pila
      * 
@@ -27,7 +26,7 @@ public class StackManager {
     public void addItem(int numero) {
         try {
             pila.push(numero);
-        }catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("❌ Error al agregar el elemento a la pila: " + e.getMessage());
         }
         showStack();
@@ -38,6 +37,7 @@ public class StackManager {
      */
     public void popItem() {
         pila.pop();
+        System.out.println("✅ Elemento eliminado de la pila");
         showStack();
 
     }
@@ -51,22 +51,20 @@ public class StackManager {
         return pila.peek();
     }
 
-
-
     /**
      * Fucnion que se encarga de mostrar tres elementos de la pila en forma de LIFO
      */
-    /**     public void showThreeOfTheElements() {
-        // 10
-        pila.size();
-        int contador = 0;
-        for (int item : pila) {
-            if(contador++ >= 3) {
-            }
-        }
-    }
-*/
-
+    /**
+     * public void showThreeOfTheElements() {
+     * // 10
+     * pila.size();
+     * int contador = 0;
+     * for (int item : pila) {
+     * if(contador++ >= 3) {
+     * }
+     * }
+     * }
+     */
 
     public void addItemsDefault() {
         addItem(10);
@@ -83,12 +81,15 @@ public class StackManager {
         if (pila.isEmpty()) {
             System.out.println("❌ La pila esta vacia");
         } else {
+
             System.out.println("✅ Elementos de la pila:");
             for (int item : pila) {
+                System.out.println("=====================================");
                 System.out.println(item);
+                System.out.println("=====================================");
+
             }
         }
     }
-
 
 }

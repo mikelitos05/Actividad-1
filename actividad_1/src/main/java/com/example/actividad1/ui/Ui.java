@@ -35,6 +35,10 @@ public class Ui {
                 default:
                     break;
             }
+            showMenu();
+
+            opciones = scanner.nextInt();
+            scanner.nextLine();
         }
 
     }

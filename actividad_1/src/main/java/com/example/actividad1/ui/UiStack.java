@@ -39,7 +39,6 @@ public class UiStack {
                     break;
                 case 3:
                     stackManager.popItem();
-                    System.out.println("Elemento eliminado de la pila.");
                     break;
                 case 4:
                     System.out.println("Ultimo elemento de la pila: " + stackManager.getLastElement());
