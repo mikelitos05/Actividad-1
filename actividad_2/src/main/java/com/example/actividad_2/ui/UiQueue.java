@@ -1,8 +1,8 @@
-package com.example.actividad1.ui;
+package com.example.actividad_2.ui;
 
 import java.util.Scanner;
 
-import com.example.actividad1.lists.QueueManager;
+import com.example.actividad_2.lists.QueueManager;
 
 public class UiQueue {
 

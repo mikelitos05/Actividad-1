@@ -1,9 +1,9 @@
-package com.example.actividad1.ui;
+package com.example.actividad_2.ui;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import com.example.actividad1.lists.LinkedListContacts;
+import com.example.actividad_2.lists.LinkedListContacts;
 
 public class UiContacts {
 

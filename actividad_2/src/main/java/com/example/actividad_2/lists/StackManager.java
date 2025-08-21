@@ -1,4 +1,4 @@
-package com.example.actividad1.lists;
+package com.example.actividad_2.lists;
 
 import java.util.Stack;
 
